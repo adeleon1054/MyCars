@@ -43,6 +43,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Y5d-wc-jw4" kind="show" id="KPf-yD-xnt"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -62,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="508" y="147.97601199400302"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Car View Controller-->
         <scene sceneID="Hwo-hP-5EZ">
             <objects>
-                <viewController id="Y5d-wc-jw4" sceneMemberID="viewController">
+                <viewController id="Y5d-wc-jw4" customClass="AddCarViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7CT-Yz-uDr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,7 +86,10 @@
                                 <rect key="frame" x="106" y="104" width="253" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="dismissKeyboard:" destination="Y5d-wc-jw4" eventType="editingDidEndOnExit" id="0Oy-f9-Zj1"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUU-bf-qCG">
                                 <rect key="frame" x="16" y="159" width="60" height="30"/>
@@ -95,7 +101,10 @@
                                 <rect key="frame" x="106" y="159" width="253" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="dismissKeyboard:" destination="Y5d-wc-jw4" eventType="editingDidEndOnExit" id="Vh8-Yv-mHj"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykf-CE-C5M">
                                 <rect key="frame" x="16" y="216" width="60" height="30"/>
@@ -107,7 +116,10 @@
                                 <rect key="frame" x="106" y="216" width="253" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="dismissKeyboard:" destination="Y5d-wc-jw4" eventType="editingDidEndOnExit" id="5XN-8k-MEE"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MPG:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmi-TM-mMk">
                                 <rect key="frame" x="16" y="269" width="60" height="30"/>
@@ -119,11 +131,17 @@
                                 <rect key="frame" x="106" y="269" width="253" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="dismissKeyboard:" destination="Y5d-wc-jw4" eventType="editingDidEndOnExit" id="ash-2S-ti6"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aP2-9I-Nm1">
                                 <rect key="frame" x="16" y="352" width="343" height="38"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveRecord:" destination="Y5d-wc-jw4" eventType="touchUpInside" id="aq9-mt-rNS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -162,6 +180,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nlA-Vk-7Tt"/>
                     </view>
+                    <connections>
+                        <outlet property="btnSave" destination="aP2-9I-Nm1" id="Olg-SM-7h8"/>
+                        <outlet property="txtMPG" destination="uw7-Fr-nfr" id="P6C-qh-7fv"/>
+                        <outlet property="txtMake" destination="vOL-qh-4Nd" id="gYe-RK-aPq"/>
+                        <outlet property="txtModel" destination="4Wu-Cp-edY" id="ePb-q3-bxv"/>
+                        <outlet property="txtYear" destination="ImE-mW-jg7" id="q5C-Ys-1dS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jFz-dn-rmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -186,4 +211,7 @@
             <point key="canvasLocation" x="-444" y="148"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="KPf-yD-xnt"/>
+    </inferredMetricsTieBreakers>
 </document>

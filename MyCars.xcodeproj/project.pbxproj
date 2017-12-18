@@ -14,6 +14,7 @@
 		F5714D821FE850DC008545E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5714D801FE850DC008545E9 /* LaunchScreen.storyboard */; };
 		F5714D851FE850DC008545E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5714D841FE850DC008545E9 /* main.m */; };
 		F5714D8D1FE8525C008545E9 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5714D8C1FE8525C008545E9 /* TableViewController.m */; };
+		F5714D901FE85DC2008545E9 /* AddCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5714D8F1FE85DC2008545E9 /* AddCarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		F5714D841FE850DC008545E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5714D8B1FE8525C008545E9 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		F5714D8C1FE8525C008545E9 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		F5714D8E1FE85DC2008545E9 /* AddCarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddCarViewController.h; sourceTree = "<group>"; };
+		F5714D8F1FE85DC2008545E9 /* AddCarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddCarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +65,16 @@
 			children = (
 				F5714D721FE850DC008545E9 /* AppDelegate.h */,
 				F5714D731FE850DC008545E9 /* AppDelegate.m */,
+				F5714D8B1FE8525C008545E9 /* TableViewController.h */,
+				F5714D8C1FE8525C008545E9 /* TableViewController.m */,
+				F5714D8E1FE85DC2008545E9 /* AddCarViewController.h */,
+				F5714D8F1FE85DC2008545E9 /* AddCarViewController.m */,
 				F5714D781FE850DC008545E9 /* Main.storyboard */,
 				F5714D7E1FE850DC008545E9 /* Assets.xcassets */,
 				F5714D801FE850DC008545E9 /* LaunchScreen.storyboard */,
 				F5714D831FE850DC008545E9 /* Info.plist */,
 				F5714D841FE850DC008545E9 /* main.m */,
 				F5714D7B1FE850DC008545E9 /* MyCars.xcdatamodeld */,
-				F5714D8B1FE8525C008545E9 /* TableViewController.h */,
-				F5714D8C1FE8525C008545E9 /* TableViewController.m */,
 			);
 			path = MyCars;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 				F5714D7D1FE850DC008545E9 /* MyCars.xcdatamodeld in Sources */,
 				F5714D851FE850DC008545E9 /* main.m in Sources */,
 				F5714D741FE850DC008545E9 /* AppDelegate.m in Sources */,
+				F5714D901FE85DC2008545E9 /* AddCarViewController.m in Sources */,
 				F5714D8D1FE8525C008545E9 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

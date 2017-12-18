@@ -1,5 +1,5 @@
 //
-//  TableViewController.h
+//  AddCarViewController.h
 //  MyCars
 //
 //  Created by Asdruval De Leon on 12/18/17.
@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
-@interface TableViewController : UITableViewController
+@interface AddCarViewController : UIViewController
 {
     AppDelegate *appDelegate;
     NSManagedObjectContext * context;
 }
+@property (strong)NSManagedObjectModel *aCar;
 
 @end
