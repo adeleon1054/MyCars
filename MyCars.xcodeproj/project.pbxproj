@@ -8,26 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		F5714D741FE850DC008545E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5714D731FE850DC008545E9 /* AppDelegate.m */; };
-		F5714D771FE850DC008545E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5714D761FE850DC008545E9 /* ViewController.m */; };
 		F5714D7A1FE850DC008545E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5714D781FE850DC008545E9 /* Main.storyboard */; };
 		F5714D7D1FE850DC008545E9 /* MyCars.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5714D7B1FE850DC008545E9 /* MyCars.xcdatamodeld */; };
 		F5714D7F1FE850DC008545E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5714D7E1FE850DC008545E9 /* Assets.xcassets */; };
 		F5714D821FE850DC008545E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5714D801FE850DC008545E9 /* LaunchScreen.storyboard */; };
 		F5714D851FE850DC008545E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5714D841FE850DC008545E9 /* main.m */; };
+		F5714D8D1FE8525C008545E9 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5714D8C1FE8525C008545E9 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F5714D6F1FE850DC008545E9 /* MyCars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5714D721FE850DC008545E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5714D731FE850DC008545E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F5714D751FE850DC008545E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F5714D761FE850DC008545E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F5714D791FE850DC008545E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5714D7C1FE850DC008545E9 /* MyCars.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCars.xcdatamodel; sourceTree = "<group>"; };
 		F5714D7E1FE850DC008545E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5714D811FE850DC008545E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5714D831FE850DC008545E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5714D841FE850DC008545E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5714D8B1FE8525C008545E9 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		F5714D8C1FE8525C008545E9 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +62,14 @@
 			children = (
 				F5714D721FE850DC008545E9 /* AppDelegate.h */,
 				F5714D731FE850DC008545E9 /* AppDelegate.m */,
-				F5714D751FE850DC008545E9 /* ViewController.h */,
-				F5714D761FE850DC008545E9 /* ViewController.m */,
 				F5714D781FE850DC008545E9 /* Main.storyboard */,
 				F5714D7E1FE850DC008545E9 /* Assets.xcassets */,
 				F5714D801FE850DC008545E9 /* LaunchScreen.storyboard */,
 				F5714D831FE850DC008545E9 /* Info.plist */,
 				F5714D841FE850DC008545E9 /* main.m */,
 				F5714D7B1FE850DC008545E9 /* MyCars.xcdatamodeld */,
+				F5714D8B1FE8525C008545E9 /* TableViewController.h */,
+				F5714D8C1FE8525C008545E9 /* TableViewController.m */,
 			);
 			path = MyCars;
 			sourceTree = "<group>";
@@ -145,10 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5714D771FE850DC008545E9 /* ViewController.m in Sources */,
 				F5714D7D1FE850DC008545E9 /* MyCars.xcdatamodeld in Sources */,
 				F5714D851FE850DC008545E9 /* main.m in Sources */,
 				F5714D741FE850DC008545E9 /* AppDelegate.m in Sources */,
+				F5714D8D1FE8525C008545E9 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

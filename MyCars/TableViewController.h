@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TableViewController.h
 //  MyCars
 //
 //  Created by Asdruval De Leon on 12/18/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TableViewController : UITableViewController
 
 @end
-
